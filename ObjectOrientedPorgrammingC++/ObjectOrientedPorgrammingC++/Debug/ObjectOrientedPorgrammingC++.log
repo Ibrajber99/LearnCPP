@@ -1,0 +1,5 @@
+﻿  MyString.cpp
+  Source.cpp
+  Generating Code...
+C:\Users\jber5\Desktop\Data Structures and Algorithms C++\ObjectOrientedPorgrammingC++\ObjectOrientedPorgrammingC++\MyString.cpp(92,21): warning C4018: '<': signed/unsigned mismatch
+  ObjectOrientedPorgrammingC++.vcxproj -> C:\Users\jber5\Desktop\Data Structures and Algorithms C++\ObjectOrientedPorgrammingC++\Debug\ObjectOrientedPorgrammingC++.exe
