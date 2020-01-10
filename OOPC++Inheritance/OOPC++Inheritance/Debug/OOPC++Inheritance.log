@@ -1,0 +1,3 @@
+﻿  Source.cpp
+C:\Users\jber5\Desktop\Data Structures and Algorithms C++\OOPC++Inheritance\OOPC++Inheritance\Source.cpp(322): warning C4715: 'Derived::operator=': not all control paths return a value
+  OOPC++Inheritance.vcxproj -> C:\Users\jber5\Desktop\Data Structures and Algorithms C++\OOPC++Inheritance\Debug\OOPC++Inheritance.exe
