@@ -1,0 +1,3 @@
+﻿  OList.cpp
+C:\Users\jber5\Desktop\Assignment2C++\Assignment2C++\OList.cpp(186): warning C4715: 'OList::remove': not all control paths return a value
+  Assignment2C++.vcxproj -> C:\Users\jber5\Desktop\Assignment2C++\Debug\Assignment2C++.exe
