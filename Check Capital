@@ -1,0 +1,61 @@
+//Leet Code question
+
+//Check capital O(n) all memeber methods for the container are Order of O(1);
+
+bool detectCapitalUse(std::string word) {
+
+	if (word.size() < 2) {
+		if (word.front()) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+
+	if (isupper(word.front()) && isupper(word.back())) {
+		int count{ 0 };
+		for (int i{ 1 }; i < word.size() - 1; i++) {
+			if (islower(word.at(i))) {
+				count++;
+			}
+		}
+		if (count > 0)
+			return false;
+
+		else
+			return true;
+
+	}
+	else if (isupper(word.front()) && islower(word.back())) {
+		int count{ 0 };
+		for (int i{ 1 }; i < word.size() - 1; i++) {
+			if (isupper(word.at(i))) {
+				count++;
+			}
+		}
+		if (count > 0)
+			return false;
+
+		else
+			return true;
+
+	}
+	else if (islower(word.front()) && islower(word.back())) {
+		int count{ 0 };
+		for (int i{ 1 }; i < word.size() - 1; i++) {
+			if (isupper(word.at(i))) {
+				count++;
+			}
+		}
+		if (count > 0)
+			return false;
+
+		else
+			return true;
+	}
+	else {
+		return false;
+	}
+
+}
