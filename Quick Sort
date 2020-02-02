@@ -1,0 +1,24 @@
+//Quick Sort---------------------------------------
+int qPartSort(std::vector<int>& vec, int begin, int end) {
+
+	int pivot = vec.at(end);
+	int partitionI = begin; //setting index as start initially
+	for (int i = begin; i < end; i++) {
+		if (vec.at(i) <= pivot) {
+			std::swap(vec.at(i), vec.at(partitionI));//Swap if the element is lesser than the pivot
+			partitionI++;
+		}
+	}
+	std::swap(vec.at(partitionI), vec.at(end)); //swap the piv with element at partition index
+	return partitionI;
+
+}
+
+void quickSort(std::vector<int>& vec, int begin, int end) {
+	if (begin < end) {
+		int loc = qPartSort(vec, begin, end);//calling qPartSort function
+		quickSort(vec, begin, loc - 1);
+		quickSort(vec, loc + 1, end);
+	}
+}
+//Quick Sort---------------------------------------
